@@ -1655,6 +1655,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media screen and (max-width: 480px){
+
+  #bada{height: 150%;}
+  #main{height: -100%;}
+  #nsbar{height: 30px;width: 30px;}
+  #msticky{right: -140px;}
+  #mimage{display: none;}
+  #mcontact{display: none;}
+  #mtitle{font-size: 20px;}
+}
+
+.sbar{
+  height: 60px;
+  width: 60px;
+}
+
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
@@ -1667,7 +1683,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding:0px;
     margin:0px;
     position:fixed;
-    right:-140px;
+    right:-100px;
     top:230px;
     width:210px;
     z-index: 1100;
