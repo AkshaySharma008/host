@@ -1664,8 +1664,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mimage{display: none;}
   #mcontact{display: none;}
   #mtitle{font-size: 20px;}
+  #innerveid{font-size: 30px;}
 }
 
+.ns{
+  font-size: 50px;
+}
+
+.innervew{
+  font-size: 45px;
+}
 .sbar{
   height: 60px;
   width: 60px;
