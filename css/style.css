@@ -1832,7 +1832,7 @@ span.psw {
   to {-webkit-transform: scale(1)}
 }
   
-@keyframes animatezoom {<span class="psw"> <a href="#footer">For more info</a></span>
+@keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
