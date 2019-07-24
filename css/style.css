@@ -1657,7 +1657,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media screen and (max-width: 480px){
 
-  #bada{height: 150%;}
+  #bada{height: 120%;}
   #main{height: -100%;}
   #nsbar{height: 30px;width: 30px;}
   #msticky{right: -140px;}
