@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
   <meta charset="utf-8">
   <title>INNERVE 4.0</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -1201,7 +1202,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
             <p>
               Army Institute Of Technology <br>
               Dighi, Pune, 411015<br>
-              United States <br>
+              Maharashtra <br>
               <strong>Phone:</strong> +91 8698 617 301<br>
               <strong>Email:</strong> innerve@aitpune.edu.in<br>
             </p>
@@ -1253,6 +1254,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
+
+  <script src="./js/firebase.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1282,17 +1285,6 @@ The hackathon will be conducted in our college itself - you can refer the map at
       stringsElement: '#typed-strings',
       typeSpeed: 100
     });
-
-    document.getElementById('register').addEventListener('submit',send);
-    function send(e){
-      e.preventDefault();
-      var dest = document.getElementById("sub").value;
-      console.log(dest);
-      var str = "https://us-central1-innerve-a43dd.cloudfunctions.net/sendMail?dest=";
-       str += dest;
-       document.location.href = str;
-    }
-  
     // Get the modal
     var modal = document.getElementById('id01');
     
@@ -1302,6 +1294,18 @@ The hackathon will be conducted in our college itself - you can refer the map at
             modal.style.display = "none";
         }
     }
+    document.getElementById('register').addEventListener('submit', sendemail);
+      function sendemail(e) {
+        e.preventDefault();
+        var dest = document.getElementById("sub").value;
+        var str = "https://us-central1-innerve-a43dd.cloudfunctions.net/sendMail?dest=";
+        str += dest;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', str, true);
+        xhr.send();
+        if (xhr.status = 200) { window.alert("An Email regarding the details have been sent to you!!") }
+        else { window.alert("Sorry!! There seems to be an error... ") }
+      }
     </script>
     
 </body>
