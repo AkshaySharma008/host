@@ -373,7 +373,7 @@ h6 {
 
 #mobile-nav-toggle i {
   color: #fff;
-  margin-left: 15em;
+  margin-left: 10em;
 }
 
 /* Mobile Nav Styling */
@@ -536,7 +536,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width:370px)
+{
+  #intro .play-btn {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #intro .intro-container{
+    padding-bottom:17em;
+  }
 
+}
 #intro .play-btn::after {
   content: '';
   position: absolute;
