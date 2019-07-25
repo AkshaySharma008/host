@@ -4,26 +4,21 @@
         authDomain: "innerve-a43dd.firebaseapp.com",
         databaseURL: "https://innerve-a43dd.firebaseio.com",
         projectId: "innerve-a43dd",
-        storageBucket: "",
+        storageBucket: "innerve-a43dd.appspot.com",
         messagingSenderId: "651253206894",
         appId: "1:651253206894:web:2204e70ab7fa178d"
       };
       // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+      firebase.initializeApp(config);
         
     var messagesRef = firebase.database().ref('messages');
 
-
-document.getElementById('register').addEventListener('submit', send);
-
-    function send(e){
-        e.preventDefault();
+    function send(){
        var name = document.getElementById('1').value;
        var email = document.getElementById('sub').value;
        var phno = document.getElementById('2').value;
-
+        console.log(name,email,phno);
        saveMessage(name,email,phno);
-       
     }
     
 
@@ -35,4 +30,6 @@ document.getElementById('register').addEventListener('submit', send);
         phnho:phno
       });
     }
+
+    
   
