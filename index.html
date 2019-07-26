@@ -117,7 +117,7 @@
         <label for="phno"><b>Phone number</b></label>
         <input type="text" placeholder="Enter your phone number" name="phno" id="2" required>
 
-        <button type="submit" onclick="send();">SUBMIT</button>
+        <button type="submit" onclick="$('#intro .play-btn').show();send();">SUBMIT</button>
         
       </div>
   
@@ -1227,7 +1227,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
                 <label>Email</label><br/>
                 <i class="fa fa-google-plus-square fa-2x" style="position: absolute;margin-top:7px;width:5px;color: black;"></i><input type="text" class="form-control" style="height: 18px;">
                 <label>Message</label><br>
-                <i class="fa fa-envelope fa-2x" style="position: absolute;margin-top:5px;width: 5px;color: black;"></i><textarea class="form-control" style="height:35px;"></textarea><br>
+                <i class="fa fa-envelope fa-2x" style="position: absolute;margin-top:5px;width: 5px;color: black;"></i><textarea class="form-control" style="height:35px;">&nbsp;&nbsp;</textarea><br>
                 <button type="submit" class="btn btn-success form-control" >Send Message</button>
             </form>
           </div>
@@ -1293,6 +1293,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            $("#intro .play-btn").show();
         }
     }
     document.getElementById('register').addEventListener('submit', sendemail);

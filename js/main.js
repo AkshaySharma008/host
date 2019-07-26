@@ -149,5 +149,7 @@ jQuery(document).ready(function( $ ) {
   })
 
 // custom code
-
+$(document).on('click', '#registerButton', function(e) {
+  $("#intro .play-btn").hide();
+});
 });
