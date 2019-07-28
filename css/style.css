@@ -1965,3 +1965,7 @@ transform: rotateY(-180deg);
 .card, .card-img-top {
 border-radius: 0;
 }
+
+.contactnew{
+  padding-left: 100px;
+}
