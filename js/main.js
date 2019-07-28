@@ -76,6 +76,12 @@ jQuery(document).ready(function( $ ) {
       $('#mobile-body-overly').toggle();
     });
 
+    $(document).on('click', '#registerButton', function(e) {
+      $('body').toggleClass('mobile-nav-active');
+      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+      $('#mobile-body-overly').toggle();
+    });
+
     $(document).click(function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -143,5 +149,7 @@ jQuery(document).ready(function( $ ) {
   })
 
 // custom code
-
+$(document).on('click', '#registerButton', function(e) {
+  $("#intro .play-btn").hide();
+});
 });
