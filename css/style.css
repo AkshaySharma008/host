@@ -1681,6 +1681,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mcontact{display: none;}
   #mtitle{font-size: 20px;}
   #innerveid{font-size: 30px;}
+  #mview{display: none;}
 }
 
 .ns{
