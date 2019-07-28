@@ -9,7 +9,7 @@
         appId: "1:651253206894:web:2204e70ab7fa178d"
       };
       // Initialize Firebase
-      firebase.initializeApp(config);
+      firebase.initializeApp(firebaseConfig);
         
     var messagesRef = firebase.database().ref('messages');
 
