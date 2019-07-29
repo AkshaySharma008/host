@@ -1693,6 +1693,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #msticky{right: -140px;}
   #mimage{display: none;}
   #mcontact{display: block;}
+  #msponsor{width: 100%;height: 100px;}
   .detai{display: none;}
   #mtitle{font-size: 20px;}
   #innerveid{font-size: 30px;}
