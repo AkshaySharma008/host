@@ -65,18 +65,7 @@
           <!--  <li><a href="#supporters">Sponsors</a></li> -->
           <li><a href="#footer">Contact</a></li>&nbsp;
           <a><li class="buy-tickets animated heartBeat infinite"><button onclick="document.getElementById('id01').style.display='block';" class="buy-tickets" id="registerButton">Register</button></a>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-          <li>&nbsp;</li>
-            <li><div align=center>
-              <p style="color:white;"><b>User Count :</b>&nbsp;&nbsp;&nbsp;<img src='https://www.counter12.com/img-d838061wyBw5Z868-4.gif' border='0'
-                  alt='counter'></p>
-            
-            <script type='text/javascript' src='https://www.counter12.com/ad.js?id=d838061wyBw5Z868'></script>
-          </div></li>
+       
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -138,14 +127,27 @@
   ============================-->
   
   <section id="intro">
+
+
+      <div class="radial-gradient"></div>
+
+
     <div id="particles-js"></div>
     <div class="intro-container wow fadeIn" id="bada">
-      <div id="typed-strings"><p>INNERVE 4.0</p></div>
-     <h1 class="mb-4 pb-0 ns">Pune's Biggest  Hackathon<br><h1  class="animated pulse infinite"><span id="typed" class="innervew" id="innerveid"></span></h1><br><h1 style="font-size: 35px;">nerve to innovate</h1></h1>
-      <p class="mb-4 pb-0">October 2019, Army Institute Of Technology, Pune</p>
-      <div id="view"><a href="https://youtu.be/YV1_AXb6PrU" class="venobox play-btn mb-4"  data-vbtype="video"
-        data-autoplay="true"></a></div>
-      <a href="#about" class="about-btn scrollto">About The Event</a>
+     
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <div id="typed-strings"><p>INNERVE 4.0</p></div>
+                <h1 class="mb-4 pb-0 ns">Pune's Biggest  Hackathon<br><h1  class="animated pulse infinite"><span id="typed" class="innervew" id="innerveid"></span></h1><br><h1 style="font-size: 35px;">nerve to innovate</h1></h1>
+                 <p class="mb-4 pb-0">October 2019, Army Institute Of Technology, Pune</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="/home/darkmaster/Desktop/m/host/img/innerve.png" alt="" >
+            </div>
+          </div>
+        </div>
+
     </div>
   </section>
 
@@ -987,7 +989,9 @@ The hackathon will be conducted in our college itself - you can refer the map at
 
       </div>
     </section>
+    
  -->
+
     <!--==========================
           Speakers Section
         ============================-->
@@ -1200,7 +1204,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
       <div class="container">
         <div class="row">
 
-         <div class="col-lg-5 col-md-6 footer-contact" style="height:auto;">
+         <div class="col-lg-4 col-md-6 footer-contact" style="height:auto;">
             <h4>Contact Us</h4>
             <p>
               Army Institute Of Technology <br>
@@ -1219,7 +1223,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
             </div>
 
           </div>
-          <div class="col-lg-4 col-md-6 footer-info" id="mimage">
+          <div class="col-lg-3 col-md-6 footer-info" id="mimage">
             <img src="img/innerve.png" width="250px" style="height: 250px;">
           </div>
 
@@ -1227,15 +1231,23 @@ The hackathon will be conducted in our college itself - you can refer the map at
             <form class="form-group" method="post">
               <h3>Contact</h3>
                 <label>Email</label><br/>
-                <i class="fa fa-google-plus-square fa-2x" style="position: absolute;margin-top:7px;width:5px;color: black;"></i><input type="text" class="form-control" style="height: 18px;">
+               <input type="text" class="form-control" style="height: 35px;">
                 <label>Message</label><br>
-                <i class="fa fa-envelope fa-2x" style="position: absolute;margin-top:5px;width: 5px;color: black;"></i><textarea class="form-control" style="height:35px;">&nbsp;&nbsp;</textarea><br>
+                <textarea class="form-control" style="height:35px;">&nbsp;&nbsp;</textarea><br>
                 <button type="submit" class="btn btn-success form-control" >Send Message</button>
 
              
             </form>
           </div>
 
+          <div class="col-lg-2 col-md-6 footer-contact" style="height:auto;">
+              <div align=center>
+                  <p style="color:white;"><i class="fa fa-user" aria-hidden="true"></i>
+                    &nbsp;&nbsp;&nbsp;<img src='https://www.counter12.com/img-d838061wyBw5Z868-4.gif' border='0'
+                      alt='counter'></p>
+                
+                <script type='text/javascript' src='https://www.counter12.com/ad.js?id=d838061wyBw5Z868'></script>
+              </div></div>
         </div>
       </div>
     </div>
@@ -1314,7 +1326,18 @@ The hackathon will be conducted in our college itself - you can refer the map at
         else { window.alert("Sorry!! There seems to be an error... ") }
       }
     </script>
-    
+    <script>
+    $(document).mousemove(function(event) {
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
+  
+  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+  
+  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(0,0,0,0.5), rgba(26,35,126,0.5))');
+});
+    </script>
+
 </body>
 
 </html>
