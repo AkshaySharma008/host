@@ -1678,7 +1678,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   #nsbar{height: 30px;width: 30px;}
   #msticky{right: -140px;}
   #mimage{display: none;}
-  #mcontact{display: none;}
+  #mcontact{display: block;}
+  .detai{display: none;}
   #mtitle{font-size: 20px;}
   #innerveid{font-size: 30px;}
   #mview{display: none;}
