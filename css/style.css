@@ -10,13 +10,13 @@
 --------------------------------------------------------------*/
 
 body {
-  background: #fff;
+  background:#fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
 
 a {
-  color: #1a237e;
+  color: #19328e;
   transition: 0.5s;
 }
 
@@ -72,7 +72,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1a237e;
+  background: #f5aa1f;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -133,7 +133,7 @@ h6 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #9195a2;
+  color:blueviolet;
 }
 
 .section-with-bg {
@@ -265,16 +265,16 @@ h6 {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
+  color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   outline: none;
 }
 
 .nav-menu .menu-active a,
 .nav-menu a:hover {
-  color: #fff;
+  color:whitesmoke;
 }
 
 .nav-menu > li {
