@@ -43,6 +43,7 @@
     Header
   ============================-->
   <header id="header">
+    
     <div class="container">
 
       <div id="logo" class="pull-left">
@@ -127,11 +128,11 @@
 
   <section id="intro">
 
-
+<div id="particles-js"></div>
       <div class="radial-gradient"></div>
 
 
-    <div id="particles-js"></div>
+   
     <div class="intro-container wow fadeIn" id="bada">
      
       <div class="container">
@@ -1318,7 +1319,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
         var xhr = new XMLHttpRequest();
         xhr.open('GET', str, true);
         xhr.send();
-        if (xhr.status = 200) { window.alert("An Email regarding the details have been sent to you!!") }
+        if (xhr.status = 200) { window.alert("An Email regarding the event have been sent to you!!") }
         else { window.alert("Sorry!! There seems to be an error... ") }
       }
     </script>
@@ -1331,7 +1332,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
   mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
   mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
   
-  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(0,0,0,0.5), rgba(26,35,126,0.5))');
+  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(0,0,0,0.5), rgba(26,35,0,0.5))');
 });
     </script>
 
