@@ -465,7 +465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 .radial-gradient {
-  position:fixed;
+  position:fixed  ;
   top:0px;
   left:0px;
   height:100%;
@@ -1682,7 +1682,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 8px 30px;
   }
 }
-
 @media screen and (max-width: 480px){
 
   #bada{height: 120%;}
@@ -1696,7 +1695,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   #innerveid{font-size: 30px;}
   #mview{display: none;}
 }
-
 .ns{
   font-size: 50px;
 }
