@@ -1716,6 +1716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #mtitle{font-size: 20px;}
   #innerveid{font-size: 30px;}
   #mview{display: none;}
+  .nvbe{margin-top: 20%;}
 }
 .ns{
   font-size: 50px;
