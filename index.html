@@ -1278,14 +1278,14 @@ The hackathon will be conducted in our college itself - you can refer the map at
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info" style="float: left;" id="mcontact">
-            <form class="form-group" method="post">
+            <form class="form-group">
               <h3>Contact</h3>
                 <label>Email</label><br/>
-               <input type="text" class="form-control" style="height: 35px;">
+               <input type="text" class="form-control" style="height: 35px;" id="contact_email"> 
                 
                 <label>Message</label><br>
-                <textarea class="form-control" style="height:35px;">&nbsp;&nbsp;</textarea><br>
-                <button type="submit" class="btn btn-success form-control" >Send Message</button>
+                <input class="form-control" style="height:35px;" id="contact_message">&nbsp;&nbsp;<br>
+                <button onclick="recieve()" class="btn btn-success form-control" >Send Message</button>
 
              
             </form>
