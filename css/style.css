@@ -8,6 +8,23 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.nteam:hover{
+  filter: grayscale(0);
+}
+.anup{
+  
+}
+
+.details{
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.nteam{
+  border-radius: 50%;filter: grayscale(100);padding: 20px;
+}
+
  .csponsor{
    margin-left: 27%;width:50%;height:35rem;
  }
@@ -468,7 +485,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 .radial-gradient {
-  position:fixed  ;
+  position:absolute ;
   top:0px;
   left:0px;
   height:100%;
@@ -1690,6 +1707,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #bada{height: 120%;}
   #main{height: -100%;}
   #nsbar{height: 30px;width: 30px;}
+  #anupid{width: 80%;}
   #msticky{right: -140px;}
   #mimage{display: none;}
   #mcontact{display: block;}
