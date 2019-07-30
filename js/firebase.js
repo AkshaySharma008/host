@@ -12,6 +12,23 @@
       firebase.initializeApp(firebaseConfig);
         
     var messagesRef = firebase.database().ref('messages');
+    var contactRef = firebase.database().ref('contact');
+
+    function recieve(){
+      var contact_email = document.getElementById('contact_email').value;
+      var contact_message = document.getElementById('contact_message').value;
+      saveContact(contact_email,contact_message);
+    }
+
+    function saveContact(contact_email,contact_message) {
+      var newContactRef = contactRef.push();
+      newContactRef.set({
+        contact_email:contact_email,
+        contact_message:contact_message
+      })
+
+      window.alert("We Have recieved your query!! We will reply you as soon as possible");
+    }
 
     function send(){
        var name = document.getElementById('1').value;
