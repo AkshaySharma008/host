@@ -490,7 +490,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   left:0px;
   height:100%;
   width:100%;
-  
+  background-image: radial-gradient(rgba(0,0,20,0.3), rgba(26,35,120,0.5));
   
 }
 
