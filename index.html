@@ -127,14 +127,12 @@
     </form>
   </div>
 
-  <div id="id02" class="modal">
-  
+  <div id="id02" class="modal modal_new">
     <form class="modal-content animate">
-  
-      <div class="container">
-        <label for="email"><b>Please Provide us with your email:</b></label>
-        <input type="email" placeholder="Enter Email" name="sponsoremail" id="sponsoremail" required>
-        <button onclick="send1();">SEND</button>
+     <div class="container">
+        <label><b>Please Provide us with your email:</b></label>
+        <input type="email" placeholder="Enter Email" id="sponsoremail" required>
+        <button onclick="save()" id="sponsorsend">SEND</button>
    </div>
   
       <div class="container" style="background-color:#f1f1f1">
@@ -1278,7 +1276,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
   <footer id="footer" style="height:17rem;" >
     <div class="footer-top">
       <div class="container" style="height:300px;">
-        <div class="row" style="margin-bootom:0px;">
+        <div class="row" style="margin-bottom:0px;">
 
          <div class="col-lg-4 col-md-6 footer-contact" style="height:auto;">
             <h4>Contact Us</h4>
@@ -1381,14 +1379,19 @@ The hackathon will be conducted in our college itself - you can refer the map at
     });
     // Get the modal
     var modal = document.getElementById('id01');
+    var modal_new = document.getElementById('id02');
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target == modal || event.target == modal_new) {
             modal.style.display = "none";
+            modal_new.style.display = "none";
             $("#intro .play-btn").show();
         }
     }
+
+    
+
     document.getElementById('register').addEventListener('submit', sendemail);
       function sendemail(e) {
         e.preventDefault();

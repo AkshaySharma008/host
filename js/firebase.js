@@ -16,14 +16,15 @@
     var sponsorRef = firebase.database().ref('SponsorEmail');
 
 
-    function send1(e){
-      e.preventDefault();
+    function save(){
+    
       var sponsoremail = document.getElementById('sponsoremail').value;
       saveSponsor(sponsoremail);
     }
 
     function saveSponsor(sponsoremail){
-      var newSponsorRef = sponsoremail.push();
+      
+      var newSponsorRef = sponsorRef.push();
       newSponsorRef.set({
         sponsor_email:sponsoremail
       }) 

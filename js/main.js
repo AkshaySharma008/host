@@ -152,4 +152,9 @@ jQuery(document).ready(function( $ ) {
 $(document).on('click', '#registerButton', function(e) {
   $("#intro .play-btn").hide();
 });
+
+  $(document).on('click', '#sponsorsend', function (e) {
+    $("#intro .play-btn").hide();
+  });
+
 });
