@@ -40,21 +40,21 @@
   ======================================================= -->
 </head>
 
-<body>
+<body >
 
   <!--==========================
     Header
   ============================-->
   <header id="header">
-    
+    <div id="logo" class="pull-left" style="margin-left:30px;">
+      <h1 style="color: white;font-size: 20px;">InNerve 4.0</h1></div>
     <div class="container">
 
-      <div id="logo" class="pull-left">
-        <h1 style="color: white;font-size: 20px;">InNerve 4.0</h1>
+      
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
 <!--         <a href="#intro" class="scrollto"><img src="img/innerve.png" alt="" title=""></a>
- -->      </div>
+ -->      
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -63,12 +63,18 @@
 
           <li><a href="#buy-tickets">Themes</a></li>
           <li><a href="#gallery">Gallery</a></li>
-
+          <li><a href="docs/participant.pdf" download>Download Brochure</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#speakers">Team</a></li>
           <!--  <li><a href="#supporters">Sponsors</a></li> -->
           <li><a href="#footer">Contact</a></li>&nbsp;
           <a><li class="buy-tickets animated heartBeat infinite"><button onclick="document.getElementById('id01').style.display='block';" class="buy-tickets" id="registerButton">Register</button></a>
+          </li><li>&nbsp;&nbsp;&nbsp;</li>
+          <a>
+            <li class="buy-tickets animated heartBeat infinite"><button
+                onclick="document.getElementById('id02').style.display='block';" class="buy-tickets"
+                id="sponsorButton">Sponsor Us</button>
+          </a>
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -111,7 +117,7 @@
         <label for="phno"><b>Phone number</b></label>
         <input type="text" placeholder="Enter your phone number" name="phno" id="2" required>
 
-        <button type="submit" onclick="$('#intro .play-btn').show();send();">SUBMIT</button>
+        <button type="submit" onclick="send();">SUBMIT</button>
 
       </div>
 
@@ -124,6 +130,24 @@
     </form>
   </div>
 
+  <div id="id02" class="modal">
+  
+    <form class="modal-content animate">
+  
+      <div class="container">
+        <label for="email"><b>Please Provide us with your email:</b></label>
+        <input type="email" placeholder="Enter Email" name="sponsoremail" id="sponsoremail" required>
+        <button onclick="send1();">SEND</button>
+   </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+  
+        <p text-align="center"><br>Please provide us with your email we will contact you as soon as possible.</p>
+  
+  
+      </div>
+    </form>
+  </div>
 
 
     
@@ -163,8 +187,10 @@
       About Section
     ============================-->
     <section id="about">
+     
       <div class="container">
         <div class="row">
+          <img src="img/rocket.png" height="130px" width="130px">
           <div class="col-lg-6">
             <h2>About The Event</h2>
             <p>Innerve 2k19 Hackathon provides you the platform to showcase your ideas and technical skills at a recognized level. This
@@ -172,7 +198,7 @@
             again this year Innerve brings you with more interesting and challenging problem statements than ever before. So get
             ready for Innerve 4.0 to exhilarate you with newer ideas,more rewards and a fun packed experience.</p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4">
            <h1 class="animated pulse infinite" style="color: white;margin-top: 10%;margin-left: 8%;color: yellowgreen">Prizes Worth 3 Lacs +</h3>
           </div>
         </div>
@@ -740,7 +766,7 @@
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8">
                 <h3>Army Institute Of Technology, Pune</h3>
-                  <h3>The Long waited InNerve 4.0 is Here...</h3>
+                  <h3>The Long Awaited InNerve 4.0 is Here...</h3>
               </div>
             </div>
           </div>
@@ -1025,7 +1051,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
             <div class="social">
               <a href=""><i class="fa fa-twitter"></i></a>
               <a href="https://www.facebook.com/anupkadam01"><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-github"></i></a>
               <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
@@ -1040,8 +1066,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/armish24"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/armish24"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arpit-kumar-mishra/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
             </div>
@@ -1052,20 +1078,20 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/NilishaNeig"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/ashalininegihere"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shlnnegi/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
           <div class="col-sm speaker"><center><img src="img/speakers/6.JPG" height="300px" width="300px" class="nteam"></center>
             <div class="details">
-              <h3><a href="speaker-details.html">Shailesh Kumar Sahu</a></h3>
-              <p> InNerve Financial Head</p>
+              <h3><a href="https://shellkore.github.io">Shailesh Kumar Sahu</a></h3>
+              <p> InNerve Management Head</p>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/shellkore"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://shellkore.github.io"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shellkore/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1078,8 +1104,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100008241159100"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/shubham7298"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shubham-singh7298/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1088,10 +1114,10 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <h3><a href="speaker-details.html">Pankaj Yadav</a></h3>
               <p>InNerve Sponsorship Head</p>
               <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href="https://twitter.com/iampankaj443?s=07"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/skypankaj443"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/pankaj443"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pankaj-yadav-953b51177/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1100,10 +1126,10 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <h3><a href="speaker-details.html">Shivam Pathak</a></h3>
               <p> InNerve Marketing Head</p>
               <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href="https://twitter.com/Pathak_codes"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/shivam.pathak.188"><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/pathakcodes"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shivam-kumar-pathak-6aa512113/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1258,10 +1284,10 @@ The hackathon will be conducted in our college itself - you can refer the map at
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer" style="height:17em;" >
+  <footer id="footer" style="height:17rem;" >
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+      <div class="container" style="height:300px;">
+        <div class="row" style="margin-bootom:0px;">
 
          <div class="col-lg-4 col-md-6 footer-contact" style="height:auto;">
             <h4>Contact Us</h4>
@@ -1269,16 +1295,15 @@ The hackathon will be conducted in our college itself - you can refer the map at
               Army Institute Of Technology <br>
               Dighi, Pune, 411015<br>
               Maharashtra <br>
-              <strong>Phone:</strong> +91 8698 617 301<br>
-              <strong>Email:</strong> innerve@aitpune.edu.in<br>
+              <strong>Phone:</strong> +91 9325 611 554<br>
+              <strong>Email:</strong> ossclub@aitpune.edu.in<br>
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/innerve24hrs" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/groups/ossclubait/" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/innervehack2k19" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/open-source-software-club/" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
           </div>
