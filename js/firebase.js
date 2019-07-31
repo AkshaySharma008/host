@@ -11,8 +11,24 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
         
-    var messagesRef = firebase.database().ref('messages');
-    var contactRef = firebase.database().ref('contact');
+    var messagesRef = firebase.database().ref('Registration');
+    var contactRef = firebase.database().ref('Queries');
+    var sponsorRef = firebase.database().ref('SponsorEmail');
+
+
+    function send1(e){
+      e.preventDefault();
+      var sponsoremail = document.getElementById('sponsoremail').value;
+      saveSponsor(sponsoremail);
+    }
+
+    function saveSponsor(sponsoremail){
+      var newSponsorRef = sponsoremail.push();
+      newSponsorRef.set({
+        sponsor_email:sponsoremail
+      }) 
+      window.alert("We have recieved your email! You will contact you shortly.");
+    }
 
     function recieve(){
       var contact_email = document.getElementById('contact_email').value;
@@ -34,7 +50,7 @@
        var name = document.getElementById('1').value;
        var email = document.getElementById('sub').value;
        var phno = document.getElementById('2').value;
-        console.log(name,email,phno);
+        
        saveMessage(name,email,phno);
     }
     

@@ -43,15 +43,15 @@
     Header
   ============================-->
   <header id="header">
-    
+    <div id="logo" class="pull-left" style="margin-left:30px;">
+      <h1 style="color: white;font-size: 20px;">InNerve 4.0</h1></div>
     <div class="container">
 
-      <div id="logo" class="pull-left">
-        <h1 style="color: white;font-size: 20px;">InNerve 4.0</h1>
+      
         <!-- Uncomment below if you prefer to use a text logo -->
         <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
 <!--         <a href="#intro" class="scrollto"><img src="img/innerve.png" alt="" title=""></a>
- -->      </div>
+ -->      
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
@@ -60,12 +60,18 @@
 
           <li><a href="#buy-tickets">Themes</a></li>
           <li><a href="#gallery">Gallery</a></li>
-
+          <li><a href="docs/participant.pdf" download>Download Brochure</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#speakers">Team</a></li>
           <!--  <li><a href="#supporters">Sponsors</a></li> -->
           <li><a href="#footer">Contact</a></li>&nbsp;
           <a><li class="buy-tickets animated heartBeat infinite"><button onclick="document.getElementById('id01').style.display='block';" class="buy-tickets" id="registerButton">Register</button></a>
+          </li><li>&nbsp;&nbsp;&nbsp;</li>
+          <a>
+            <li class="buy-tickets animated heartBeat infinite"><button
+                onclick="document.getElementById('id02').style.display='block';" class="buy-tickets"
+                id="sponsorButton">Sponsor Us</button>
+          </a>
           </li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -108,7 +114,7 @@
         <label for="phno"><b>Phone number</b></label>
         <input type="text" placeholder="Enter your phone number" name="phno" id="2" required>
 
-        <button type="submit" onclick="$('#intro .play-btn').show();send();">SUBMIT</button>
+        <button type="submit" onclick="send();">SUBMIT</button>
 
       </div>
 
@@ -121,6 +127,24 @@
     </form>
   </div>
 
+  <div id="id02" class="modal">
+  
+    <form class="modal-content animate">
+  
+      <div class="container">
+        <label for="email"><b>Please Provide us with your email:</b></label>
+        <input type="email" placeholder="Enter Email" name="sponsoremail" id="sponsoremail" required>
+        <button onclick="send1();">SEND</button>
+   </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+  
+        <p text-align="center"><br>Please provide us with your email we will contact you as soon as possible.</p>
+  
+  
+      </div>
+    </form>
+  </div>
 
   <!--==========================
     Intro Section
