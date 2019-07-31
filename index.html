@@ -9,6 +9,9 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -143,6 +146,9 @@
       </div>
     </form>
   </div>
+
+
+    
 
   <!--==========================
     Intro Section
@@ -934,6 +940,9 @@
     </section>
 </div>
 
+
+  
+   
     <!--==========================
       F.A.Q Section
     ============================-->
@@ -1039,7 +1048,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
             <p>OSS Club Faculty Incharge</p>
             <div class="social">
               <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/anupkadam01"><i class="fa fa-facebook"></i></a>
               <a href=""><i class="fa fa-github"></i></a>
               <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
@@ -1054,8 +1063,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <p> OSS Club Incharge</p>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/armish24"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/armish24"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/arpit-kumar-mishra/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -1066,8 +1075,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <p>OSS Club Incharge</p>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/NilishaNeig"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/ashalininegihere"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/shlnnegi/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -1092,8 +1101,8 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <p>InNerve Technical Head </p>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008241159100"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/shubham7298"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/shubham-singh7298/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -1103,10 +1112,10 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <h3><a href="speaker-details.html">Pankaj Yadav</a></h3>
               <p>InNerve Sponsorship Head</p>
               <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/iampankaj443?s=07"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/skypankaj443"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/pankaj443"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pankaj-yadav-953b51177/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -1115,9 +1124,9 @@ The hackathon will be conducted in our college itself - you can refer the map at
               <h3><a href="speaker-details.html">Shivam Pathak</a></h3>
               <p> InNerve Marketing Head</p>
               <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/Pathak_codes"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/shivam.pathak.188"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/pathakcodes"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/shivam-kumar-pathak-6aa512113/"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -1417,6 +1426,27 @@ The hackathon will be conducted in our college itself - you can refer the map at
    $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(0,0,20,0.3), rgba(26,35,120,0.5))');
  });
     </script>
+
+      <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+     <!-- initialise swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 
 </body>
