@@ -158,3 +158,14 @@ $(document).on('click', '#registerButton', function(e) {
   });
 
 });
+
+function validate(){
+  var phoneno = /^\d{10}$/;
+  if(document.getElementById('2').value.match(phoneno))
+  {}
+  else  
+  {
+    document.getElementById('2').value = "";
+    window.alert('Please enter a 10 digit number!!')
+  }
+}
