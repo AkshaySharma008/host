@@ -2,6 +2,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#btn:hover{
+transition: all 0.3s;
+background-color: orange;
+color:black;
+}
+
+
 .nteam:hover{
   filter: grayscale(0);
 }
