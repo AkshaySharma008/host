@@ -17,7 +17,7 @@
 
 .details{
   width: 80%;
-  margin-left: 10%;
+  margin-left: 13%;
 }
 
 
@@ -1718,12 +1718,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   #msticky{right: -140px;}
   #mimage{display: none;}
   #mcontact{display: block;}
-  #msponsor{width: 100%;margin: 0px;}
+  #msponsor{width: 100%;margin: 0px;height: auto;}
   .detai{display: none;}
   #mtitle{font-size: 20px;}
   #innerveid{font-size: 30px;}
   #mview{display: none;}
   .nvbe{margin-top: 20%;}
+  #footer{
+    height: 100%;
+  }
 }
 .ns{
   font-size: 50px;
