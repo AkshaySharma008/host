@@ -115,9 +115,9 @@
         <input type="email" placeholder="Enter Email" name="email" id="sub" required>
 
         <label for="phno"><b>Phone number</b></label>
-        <input type="text" placeholder="Enter your phone number" name="phno" id="2" required>
+        <input type="text" placeholder="Enter your phone number" name="phno" id="2" onclick="validate()" required>
 
-        <button type="submit" onclick="send();">SUBMIT</button>
+        <button type="submit" onclick="send()">SUBMIT</button>
 
       </div>
 
@@ -1385,14 +1385,14 @@ The hackathon will be conducted in our college itself - you can refer the map at
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info" style="float: left;" id="mcontact">
-            <form class="form-group">
+            <form class="form-group" id="contact">
               <h3>Contact</h3>
                 <label>Email</label><br/>
                <input type="text" class="form-control" style="height: 35px;" id="contact_email">
 
                 <label>Message</label><br>
                 <input class="form-control" style="height:35px;" id="contact_message">&nbsp;&nbsp;<br>
-                <button onclick="recieve()" class="btn btn-success form-control" >Send Message</button>
+                <button type="submit" class="btn btn-success form-control" >Send Message</button>
 
 
             </form>
@@ -1429,8 +1429,9 @@ The hackathon will be conducted in our college itself - you can refer the map at
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->
-      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+<script src="./js/firestore.js"></script>
   <script src="./js/firebase.js"></script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
