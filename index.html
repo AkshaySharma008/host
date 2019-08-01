@@ -3,7 +3,9 @@
 
 <head>
     <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
-  <meta charset="utf-8">
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+
+    <meta charset="utf-8">
   <title>INNERVE 4.0</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -117,7 +119,7 @@
         <label for="phno"><b>Phone number</b></label>
         <input type="text" placeholder="Enter your phone number" name="phno" id="2" onclick="validate()" required>
 
-        <button type="submit" onclick="send()">SUBMIT</button>
+        <button type="submit" id="register_submit">SUBMIT</button>
 
       </div>
 
@@ -132,22 +134,14 @@
 
 
   <div id="id02" class="modal modal_new">
-    <form class="modal-content animate">
-     <div class="container">
+    <form class="modal-content animate" method="POST" id="sponsor_btn">
+     <div class="container" >
         <label><b>Please Provide us with your email:</b></label>
         <input type="email" placeholder="Enter Email" id="sponsoremail" required>
-        <button onclick="save()" id="sponsorsend">SEND</button>
-
+        <button type="submit" id="sponsorsend">SEND</button>
    </div>
-
-      <div class="container" style="background-color:#f1f1f1">
-
-        <p text-align="center"><br>Please provide us with your email we will contact you as soon as possible.</p>
-
-
-      </div>
-    </form>
-  </div>
+</form>
+ </div>
 
 
     
@@ -1385,17 +1379,17 @@ The hackathon will be conducted in our college itself - you can refer the map at
           </div>
 
           <div class="col-lg-3 col-md-6 footer-info" style="float: left;" id="mcontact">
-            <form class="form-group" id="contact">
+            <form id="contact_form">
               <h3>Contact</h3>
                 <label>Email</label><br/>
                <input type="text" class="form-control" style="height: 35px;" id="contact_email">
 
                 <label>Message</label><br>
                 <input class="form-control" style="height:35px;" id="contact_message">&nbsp;&nbsp;<br>
-                <button type="submit" class="btn btn-success form-control" >Send Message</button>
+                <button class="btn btn-success form-control" type="submit">Send Message</button>
+              </form>
 
-
-            </form>
+            
           </div>
 
           <div class="col-lg-2 col-md-6 footer-contact" style="height:auto;">
@@ -1432,7 +1426,7 @@ The hackathon will be conducted in our college itself - you can refer the map at
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
 <script src="./js/firestore.js"></script>
-  <script src="./js/firebase.js"></script>
+  <!-- <script src="./js/firebase.js"></script> -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
