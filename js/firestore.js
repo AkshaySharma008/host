@@ -8,18 +8,13 @@ var firebaseConfig = {
     appId: "1:651253206894:web:2204e70ab7fa178d"
 };
 // Initialize Firebase
-var app = firebase.initializeApp(firebaseConfig);
-var firestore = firebase.firestore(app);
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
 
-const increment = firebase.firestore.FieldValue.increment(1);
-const showView = firestore.collection('views').doc('show');
-const originalView = firestore.collection('views').doc('original');
-showView.update({views:increment});
-originalView.update({ views: increment });  
 
-/* var docRef1 = firestore.collection(`Register_Data/Details`);
- var docRef2 = firestore.doc("Sponsor_Email/Email");
-var docRef3 = firestore.doc("Contact_Query/Query");*/
+var docRef1 = firestore.doc(`Register_Data/Details`);
+var docRef2 = firestore.doc("Sponsor_Email/Email");
+var docRef3 = firestore.doc("Contact_Query/Query");
 
 document.getElementById('register').addEventListener('submit', register_data);
 document.getElementById('sponsor_btn').addEventListener('submit', save);
@@ -30,11 +25,11 @@ function register_data(){
     const store_email = document.getElementById('sub').value;
     const store_phno = document.getElementById('2').value;
     console.log(store_name,store_email,store_phno);
-    firestore.collection('Register').add({
+    docRef1.set({
         name : store_name,
         email : store_email,
         phone_no : store_phno 
-    }).then(function () {
+    },{merge: true}).then(function () {
         window.alert("We have recieved your registration!!")
         console.log("status saved");
     }).catch(function (error){
@@ -48,7 +43,7 @@ function save(e) {
     const Sponsor_Email = document.getElementById("sponsoremail").value;
     console.log(Sponsor_Email);
     
-    firestore.collection('Sponsors').add({
+    docRef2.set({
         sponsor_email : Sponsor_Email,
     }).then(function() {
         window.alert("We have recieved your Contact Email");
@@ -64,7 +59,7 @@ function query(e) {
     const Contact_Email = document.getElementById("contact_email").value;
     const Contact_Message = document.getElementById("contact_message").value;
     console.log(Contact_Email,Contact_Message);
-    firestore.collection('Query').add({
+    docRef3.set({
         Contact_Email : Contact_Email,
         Contact_Message : Contact_Message,
     }).then(function () {
