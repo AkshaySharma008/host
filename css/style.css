@@ -1726,6 +1726,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #footer{
     height: 100%;
   }
+  .mpage{margin-top: 20%;}
 }
 .ns{
   font-size: 50px;
